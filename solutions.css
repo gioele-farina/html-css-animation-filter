@@ -84,3 +84,33 @@
   border-radius: 25px;
   filter: sepia(0.8);
 }
+
+/* Esercizio 9 */
+
+.ex-9-img {
+  transition: all 2s linear;
+}
+
+.ex-9-img:hover {
+  border-radius: 25px;
+  filter: sepia(0.8);
+  transform: scale(1.5);
+}
+
+/* Esercizio 10 */
+
+.ex-10-icon {
+  animation-name: rotate-left;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate-left {
+  from {
+    transform:rotate(360deg);
+  }
+  to {
+    transform:rotate(0deg);
+  }
+}
