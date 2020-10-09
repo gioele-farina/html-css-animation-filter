@@ -164,3 +164,35 @@
 }
 
 /* Esercizio 13 */
+
+.ex-13-button:hover .ex-13-top-white {
+  animation-name: slitta-destra2;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+  animation-name: slitta-sinistra2;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes slitta-destra2 {
+  0% {left: 10%; top: -10%}
+  20% {left: 100%; top: -10px;}
+  40% {left: 100%; top: calc(100% - 10px);}
+  60% {left: -10px; top: calc(100% - 10px);}
+  80% {left: -10px; top: -10px;}
+  100% {left: 10%; top: -10%;}
+}
+
+@keyframes slitta-sinistra2 {
+  0% {right: 20%; bottom: -10%;}
+  20% {right: calc(100% - 40px); bottom: -10px;}
+  40% {right: calc(100% - 40px); bottom: 100%;}
+  60% {right: -10px; bottom: 100%;}
+  80% {right: -10px; bottom: -10px;}
+  100% {right: 20%; bottom: -10%;}
+}
